@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="library.png" >
+    <title>Book List</title>
+</head>
+<body class="pt-16 pb-16 pl-96 pr-96">
+    <div class="border-gray-300 border-2 rounded-md">
+        <div class="bg-gray-200 pl-56 pr-56 pt-24 pb-24 rounded-tr-md rounded-tl-md rounded overflow-hidden relative">
+            <h1 class="text-xl text-center pb-2">Book List</h1>
+            <form action="/">
+                <input class="border-2 rounded-lg pt-2 pb-2 pl-2 pr-48 absolute left-44" type="text" id="search" placeholder="Search Books...">
+            </form>
+        </div>
+        <div>
+            <h1 class="text-xl m-4">Books to Read</h1>
+            <ul id="book-list">
+                <li class="li">  Name Of The Wind <span class="deleteBtn">Delete</span></li>
+                <li class="li">  The Wise's Man Fear <span class="deleteBtn">Delete</span></li>
+                <li class="li">  Kafka On The Shore <span class="deleteBtn">Delete</span></li>
+            </ul>
+
+            <form id="form" action="/">
+                <input type="checkbox" id="hide" class="relative left-8 hide"> <label for="#hide" class="relative left-8">Hide the Book list</label> <br>
+                <input id="addInput" class="border-gray-300 border-2 rounded-tl-lg rounded-bl-lg overflow-hidden mb-16 pt-2 pb-2 pl-2 pr-48 left-48 sm:static lg:relative" type="text" placeholder="Add a Book...">
+                <span id="addBtn" class="relative add">Add</span>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

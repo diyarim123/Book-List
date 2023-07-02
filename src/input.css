@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.deleteBtn {
+    @apply pt-2 pb-2 pl-6 pr-6 bg-purple-700 cursor-pointer rounded-md text-white hover:bg-purple-900 absolute right-2 bottom-2
+}
+.add {
+    @apply pl-6 pr-6 bg-purple-700 cursor-pointer rounded-tr-md rounded-br-md text-white hover:bg-purple-900 right-2 bottom-2
+}
+.li {
+    @apply m-12 border-l-8 p-4 relative flex jus hover:border-purple-700;
+}
